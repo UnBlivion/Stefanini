@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    box-sizing: border-box;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+.barra{
+    background-color: black;
+    width: 40px;
+    height: 4px;
+    border-radius: 25px;
+    margin-bottom: 10%;
+}
+
+header img{
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+section img {
+    height: 20vh;
+    object-fit: contain;
+}
+
+p{
+    display: none;
+    margin: 10%; 
+    text-align: center;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inputs select{
+    width: calc(35vh / 2 );
+}
+
+.inputs input{
+    width: calc(35vh / 2);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    margin: 6% 3%;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+select, input {
+    display:block;
+    width: 35vh;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px;
+    box-sizing: border-box;
+    background-color: ghostwhite;
+    border-radius: 3px;
+}
+
+.modal {
+    height: 85vh;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient( white, slategrey);
+    transition:0.5s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal_show {
+    opacity: 1 !important;
+    transform:translateY(0%)
+}
+
+button{
+    width: 40%;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: none;
+    height: 30px;
+    letter-spacing: 1px;
+    background-color: rgb(129, 255, 129);
+}
+
+footer{ 
+    background-color: white;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.171);
+    z-index: 2;
+
+}
+
+footer h3{
+    font-size: 15px;
+}
+
+.modal p {
+    display: block;
+}

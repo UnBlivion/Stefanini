@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aedes PSP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Provê informações sobre o app e como ele se comporta quando instalado -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Tags para compatibilidade em iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Meu App">
+    <link rel="apple-touch-icon" href="img/icon-192.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <img src="http://www.prefeitura.sp.gov.br/cidade/secretarias/upload/comunicacao/arquivos/manual_identidade_visual/logos-pmsp/Prefeitura_de_Sao_Paulo_Horizontal_Preferencial.png"
+            alt="">
+        <div id="hamburger">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+    </header>
+
+    <section>
+
+        <img src="https://cdn.pixabay.com/photo/2017/02/01/00/37/bloodsucker-2028617__340.png" alt="">
+         
+        <p>Escolha o bairro, a doença e a quantidade de casos ocorridos e ajude a prefeitura de SP a controlar o Aedes Aegypti.</p>
+        <select name="bairros" class="bairro">
+            <option value="" disabled selected>Selecione o bairro</option>
+            <option value="se">Sé</option>
+            <option value="liberdade">Liberdade</option>
+            <option value="itaim_paulista">Itaim Paulista</option>
+            <option value="jabaquara">Jabaquara</option>
+        </select>
+        <div class="inputs">
+            <select name="" class="doenca" id="">
+                <option value="" disabled selected>Doença</option>
+                <option class="dengue" value="dengue">dengue</option>
+                <option class="zika" value="zika">zika</option>
+                <option class="chico" value="chico">chicocunha</option>
+                <option class="febre" value="febre">febramalera</option>
+            </select>
+            <input type="number" name="" class="numero" placeholder="Qtd de Casos">
+        </div>
+        <button class="botao">Enviar</button>
+        <button class="showButton">Mostrar</button>
+
+    </section>
+    
+    <footer>
+            <h3>#HACKATHON STEFANINI</h3>
+       </footer>
+
+    <aside class="modal">
+        <p id="dados"></p>
+    </aside>
+
+</body>
+
+</html>
